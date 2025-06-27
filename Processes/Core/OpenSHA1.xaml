@@ -103,9 +103,10 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpenSHA1" sap:VirtualizedContainerService.HintSize="927.6,2497.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenSHA1" sap:VirtualizedContainerService.HintSize="926,2497.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -232,7 +233,13 @@
                   </ActivityAction>
                 </uix:NApplicationCard.Body>
                 <uix:NApplicationCard.TargetApp>
-                  <uix:TargetApp Area="-10, 0, 1942, 1033" BrowserType="Chrome" ContentHash="-SE20z7sGECOzvAh0QqChA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABbSURBVDhPY3h1VOw/DHOoHyEZM8A0Us0AUl2E1QBkmhAmaAAhFxFlADKNjkk2AN1FZBmATFNkAAiTbQAMk2QADJNlAC6M1wBsNqJjnAYQi1EMIMZGdAw3gFwMAAOUOX1CmNE5AAAAAElFTkSuQmCC" InformativeScreenshot="f3813da99e796133282d92b334882ab2.jpg" Reference="lrqnkAxH0UK0johu42M-og/0qnyNfSLxUymGdhQSlkYGQ" Selector="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" Url="http://www.sha1-online.com/" Version="V2" />
+                  <uix:TargetApp Area="-10, 0, 1942, 1033" BrowserType="Chrome" ContentHash="cPuj_-ndgUC-C5afHF5Y5Q" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABbSURBVDhPY3h1VOw/DHOoHyEZM8A0Us0AUl2E1QBkmhAmaAAhFxFlADKNjkk2AN1FZBmATFNkAAiTbQAMk2QADJNlAC6M1wBsNqJjnAYQi1EMIMZGdAw3gFwMAAOUOX1CmNE5AAAAAElFTkSuQmCC" InformativeScreenshot="f3813da99e796133282d92b334882ab2.jpg" Reference="lrqnkAxH0UK0johu42M-og/0qnyNfSLxUymGdhQSlkYGQ" Selector="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" Version="V2">
+                    <uix:TargetApp.Url>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">in_Config["SHAURL"].ToString()</CSharpValue>
+                      </InArgument>
+                    </uix:TargetApp.Url>
+                  </uix:TargetApp>
                 </uix:NApplicationCard.TargetApp>
               </uix:NApplicationCard>
             </Sequence>
